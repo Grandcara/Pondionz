@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- customize the color palette -->
+        <item name="colorPrimary">@color/blue700</item>
+        <item name="colorPrimaryDark">@color/blue900</item>
+        <item name="colorAccent">#FF4081</item>
+        <item name="windowActionBar">false</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppThemeBlue" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- customize the color palette -->
+        <item name="colorPrimary">@color/blue700</item>
+        <item name="colorPrimaryDark">@color/blue900</item>
+        <item name="colorAccent">#FF4081</item>
+        <item name="windowActionBar">false</item>
+
+    </style>
+    <style name="AppThemeRed" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- customize the color palette -->
+        <item name="colorPrimary">@color/red900</item>
+        <item name="colorPrimaryDark">@color/red700</item>
+        <item name="colorAccent">#448AFF</item>
+        <item name="windowActionBar">false</item>
+    </style>
+    <style name="AppThemeGreen" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- customize the color palette -->
+        <item name="colorPrimary">@color/green900</item>
+        <item name="colorPrimaryDark">@color/green700</item>
+        <item name="colorAccent">#FFFF00</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+</resources>

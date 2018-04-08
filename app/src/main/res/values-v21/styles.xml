@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/blue500</item>
+        <item name="colorPrimary">@color/blue500</item>
+        <item name="colorPrimaryDark">@color/blue700</item>
+        <item name="colorAccent">#FF4081</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+
+    <style name="AppThemeBlue" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/blue900</item>
+        <item name="android:navigationBarColor">@color/blue900</item>
+        <item name="colorPrimary">@color/blue700</item>
+        <item name="colorPrimaryDark">@color/blue900</item>
+        <item name="colorAccent">#FF4081</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppThemeRed" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/red900</item>
+        <item name="android:navigationBarColor">@color/red900</item>
+        <item name="colorPrimary">@color/red700</item>
+        <item name="colorPrimaryDark">@color/red900</item>
+        <item name="colorAccent">#448AFF</item>
+        <item name="windowActionBar">false</item>
+    </style>
+    <style name="AppThemeGreen" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/green900</item>
+        <item name="android:navigationBarColor">@color/green900</item>
+        <item name="colorPrimary">@color/green700</item>
+        <item name="colorPrimaryDark">@color/green900</item>
+        <item name="colorAccent">#FFFF00</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+</resources>

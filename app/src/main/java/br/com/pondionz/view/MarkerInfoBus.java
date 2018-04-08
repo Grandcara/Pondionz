@@ -1,0 +1,141 @@
+package br.com.pondionz.view;
+
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
+import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.gms.maps.model.Marker;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+import br.com.pondionz.control.StableArrayAdapterMarker;
+import br.com.pondionz.R;
+import br.com.pondionz.dao.DBFLinha;
+import br.com.pondionz.dao.DBFPonto;
+import br.com.pondionz.dao.MySQLiteHelper;
+import br.com.pondionz.model.Linha;
+
+
+/**
+ * Created by Iago on 29/12/2015.
+ */
+public class MarkerInfoBus extends Activity {
+    private static Marker marker;
+    public MarkerInfoBus(Marker marker){
+        MarkerInfoBus.marker = marker;
+    }
+    public MarkerInfoBus(){
+    }
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.makeinfobus);
+
+        //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        createMarkerInfo();
+    }
+
+    private void createMarkerInfo() {
+        final ListView listview = (ListView) findViewById(R.id.listmakerinfo);
+        String[] values = new String[] {"Linhas que passam neste ponto", "Problemas com o ponto?"};
+        if(new DBFPonto(this).getTituloExistenteUsuario(marker.getTitle())) {
+            values = new String[]{"Linhas que passam neste ponto", "Problemas com o ponto?", "Editar ponto", "Excluir Ponto"};
+        }
+        final ArrayList<String> list = new ArrayList<String>();
+        Collections.addAll(list, values);
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, list);
+
+        //Define o titulo da janela
+        TextView tvTitle = (TextView) findViewById(R.id.tvtitle);
+        tvTitle.setText(marker.getTitle());
+
+        //define a descrição do ponto
+        TextView tvdescricao = (TextView) findViewById(R.id.tvdescription);
+        tvdescricao.setText(marker.getSnippet());
+
+        //Retorna todos as linhas que passa no ponto de acordo com nome do ponto.
+        List<Linha> linhas = new DBFLinha(this).getAllLinhaDAO(marker.getTitle());
+        if(linhas.size() == 0){
+            linhas = new DBFLinha(this).getAllLinhaUsuarioDAO(marker.getTitle());
+            Log.i("Direcao", "entrou "+linhas.size());
+        }
+       //função pra buscar a direção do ponto para melhor apresentação dos horarios
+
+        ListView lv_Horarios = (ListView) findViewById(R.id.lv_onibushorario);
+        ListAdapter adapter2= new StableArrayAdapterMarker(getApplicationContext(),marker.getTitle(),linhas);
+
+        lv_Horarios.setAdapter(adapter2);
+
+        listview.setAdapter(adapter);
+        final List<Linha> finalLinhas = linhas;
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, final View view,
+                                    int position, long id) {
+                switch (position) {
+                    case 0:
+                        new LinhasView(finalLinhas);
+                        Intent intent = new Intent(getApplicationContext(), LinhasView.class);
+                        startActivity(intent);
+                        break;
+                    case 1:
+
+                        new MailSenderActivity(marker.getTitle(),1);
+                        Intent intent2 = new Intent(getApplicationContext(), MailSenderActivity.class);
+                        startActivity(intent2);
+                        break;
+                    case 3:
+                        AlertDialog alerta;
+                        AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
+                        //define o titulo
+                        builder.setTitle("Excluir!");
+                        // define a mensagem
+                        builder.setMessage("Deseja realmente excluir esse ponto?");
+                        //define um botão como positivo
+                        builder.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface arg0, int arg1) {
+                                new DBFPonto(getApplicationContext()).deletePointUsuario(marker.getTitle());
+                                new MarkerSetMap().setUpClusterer();
+                                finish();
+                            }
+                        }); //define um botão como negativo.
+                        builder.setNegativeButton("Não", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface arg0, int arg1) {
+
+                            }
+                        }); //cria o AlertDialog
+                        alerta = builder.create(); //Exibe
+                        alerta.show();
+                        break;
+                    case 2:
+                        Toast.makeText(getApplicationContext(),"Em desenvolvimento",Toast.LENGTH_LONG).show();
+                        break;
+                }
+            }
+
+        });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        createMarkerInfo();
+    }
+
+
+}

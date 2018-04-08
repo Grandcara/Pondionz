@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Pondionz</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="compose_email">Compose Email</string>
+    <string name="newtext">New Text</string>
+    <string name="fav_favoritos">Favoritos</string>
+    <string name="sobre">Sobre</string>
+    <string name="hor_horarios">Horários</string>
+    <string name="hor_clique_acima">Clique acima para mais informações</string>
+    <string name="fav_favoritos_horarios">Favoritos - Horários</string>
+    <string name="contrucao">EM CONTRUÇÂO</string>
+    <string name="favmake_atencao">Atenção: os horários se referem a quando o ônibus saiu do ponto inicial, ele demora algum tempo para chegar até o ponto.</string>
+    <string name="lin_cliqueinfor">Clique para mais informações</string>
+    <string name="lin_tarifa">tarifa</string>
+    <string name="lin_verhorarios">Horários</string>
+    <string name="lin_verrotas">Rotas</string>
+    <string name="lin_linhasqpassam">Linhas que trafegam pelo ponto</string>
+    <string name="lin_mais_info">Clique abaixo para mais informações</string>
+    <string name="lin_linhas">Linhas</string>
+    <string name="mail_complete">Complete as informações e envie, sua opinião é que nos faz crescer mais.</string>
+    <string name="mail_escolha">Escolha o tipo</string>
+    <string name="mail_digite_a_mensagem">Digite a mensagem detalhando tudo que considerar</string>
+    <string name="mail_nome">Nome(Opcional)</string>
+    <string name="mail_email">Email(Opcional)</string>
+    <string name="mail_msg">Mensagem</string>
+    <string name="make_next_bus">Próximos ônibus - horários</string>
+    <string name="make_mais_informa_es">Mais Informações</string>
+
+</resources>

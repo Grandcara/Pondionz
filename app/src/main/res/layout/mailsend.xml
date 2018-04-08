@@ -1,0 +1,137 @@
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:background="@color/blue50">
+
+ <LinearLayout
+    android:layout_width="fill_parent"
+
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical"
+    android:background="@color/blue50">
+
+
+
+<TextView
+
+    android:id="@+id/text1"
+
+    android:layout_width="fill_parent"
+
+    android:layout_height="wrap_content"
+
+    android:layout_marginBottom="20dp"
+
+    android:gravity="center"
+
+    android:text="@string/mail_complete"
+
+    android:layout_marginTop="10dp"
+    android:textStyle="bold"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:textSize="15dp"
+    android:textColor="#000000" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mail_escolha"
+        android:id="@+id/textView11"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnermailsend"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mail_nome"
+        android:id="@+id/textView12"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/mail_ednome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mail_email"
+        android:id="@+id/main_tvemail"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/mail_edmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mail_msg"
+        android:id="@+id/mail_tvmsg"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <EditText
+
+    android:id="@+id/body"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+
+    android:ems="10"
+
+    android:hint="@string/mail_digite_a_mensagem"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+
+
+<Button
+
+    android:id="@+id/sendEmail"
+
+    android:layout_width="wrap_content"
+
+    android:layout_height="wrap_content"
+    android:drawableLeft="@drawable/ic_mail_outline_black_36dp"
+    android:layout_marginTop="30dp"
+
+    android:text="Enviar"
+    android:layout_margin="10dp"
+    android:layout_gravity="center_horizontal" />
+
+
+
+    </LinearLayout>
+ </ScrollView>

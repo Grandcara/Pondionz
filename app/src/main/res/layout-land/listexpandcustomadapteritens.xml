@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCustonadapterTarifa"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:text="@string/lin_tarifa"
+        android:layout_below="@+id/imageViewEmpresa"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageViewEmpresa"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/tvCustonadapterTarifa"
+        android:layout_alignStart="@+id/tvCustonadapterTarifa" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lin_verhorarios"
+        android:drawableLeft="@drawable/ic_query_builder_black_36dp"
+        android:id="@+id/btHorariosExpand"
+        android:layout_alignTop="@+id/btRotasExpand"
+
+        android:layout_alignLeft="@+id/tvCustonadapterTarifa"
+        android:layout_alignStart="@+id/tvCustonadapterTarifa" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lin_verrotas"
+        android:drawableLeft="@drawable/ic_directions_black_36dp"
+        android:id="@+id/btRotasExpand"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_below="@+id/tvCustonadapterTarifa"
+        android:layout_toRightOf="@+id/btHorariosExpand"
+        android:layout_toEndOf="@+id/btHorariosExpand" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:id="@+id/imageViewOnibus"
+        android:layout_alignTop="@+id/imageViewEmpresa"
+        android:layout_toRightOf="@+id/imageViewEmpresa"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="6dp"
+        android:layout_above="@+id/tvCustonadapterTarifa" />
+
+</RelativeLayout>

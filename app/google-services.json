@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "532669214351",
+    "firebase_url": "https://pondionz.firebaseio.com",
+    "project_id": "pondionz",
+    "storage_bucket": "pondionz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532669214351:android:ab1ba6baf09d1cec",
+        "android_client_info": {
+          "package_name": "br.com.pondionzi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "532669214351-lcjrn56fn240m3unr8ef2br04eqvotrr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.pondionzi",
+            "certificate_hash": "57676a0c96ca4b06ca0fb8ba7e658a6e3976dfaa"
+          }
+        },
+        {
+          "client_id": "532669214351-64hqa8ur7rk9b6es3dt6n9unvrgl892q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATgswZaShCWDaPXfdyQj0Oj3o4KkT1bY8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "532669214351-64hqa8ur7rk9b6es3dt6n9unvrgl892q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

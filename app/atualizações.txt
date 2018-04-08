@@ -1,0 +1,91 @@
+açoes da empresa, eu 90%, lucas 10%
+1.0.0:
+bugs
+
+1.0.1
+adicionado o wizard
+telas 1920x1080
+
+1.0.1.2
+bugs na linha 17 foi nescessario atualizar db versao 2
+bugs nas telas
+
+1.0.1.3
+wizard aparece somente na primeira vez que usuario utilizar a aplicaçao e nao em todas as atualizaçoes do banco de dados
+erro de portugues no BD , foi nescessario atualizar o db versao 3
+melhorias no makerinfor
+
+1.0.1.4
+melhorias no design dos horarios
+atualização foto wizard1(horario)
+
+1.0.1.5
+melhoria incrivel nos horarios
+bug no db que vai levar pra versao 4
+
+1.0.1.6
+horarios diminuiu o tom das cores
+bug nos horarios, faltando
+
+1.0.1.7
+organizaçao de codigo e correções de pequenos bugs
+melhoria no desempenho
+erro no ponto da biquinha , oq vai levar db pra versao 5
+pontos 97 98, adicionado no pontolinha tbm
+todas as mensagens staticas das telas  foi transofmada em @string/
+cor numero 7 alterada
+tela de email modificada e melhora no algoritmo
+
+1.0.1.8
+bomfim é bonfin linha 11 escrita eerrado
+
+1.0.2.0 //grande mudança
+banco de dados veersão 8
+tela maker horarios atualizada, novos maker por email
+adicionado nova coluna na tabela ponto, onde sera mostrado o tipo de ponto , 0 ponto onibus, 1 moto taxi, 2 taxi
+adicionado tela para adicionar novos makers
+adicionado exclusao dos marker
+cores de acordo com o marker,
+colocado a logo dos parceiros
+colocado o pontoLinha para bus
+adicionado para deletar o pontolinhausuario
+retorno tava correto problema era na chamada da query sqlite agora ta tudo ok
+falta fazer a chamada do listview do markerinfo para que ele busque as informações
+foi encontrado um bug na tela listview do markerlist na tela "xy"
+//depois do beta
+icons padronizados no drawer
+bug do ctan arrumado onde aparece um 50+
+1.0.2.1
+otimizações de codigo e correções de bugs
+correcao bug na linha 15,
+bugs tela
+BIQUINHA 25
+10,11,14,16,22 não passam nesse ponto
+grave erro na mensagem pro email, atualização urgente
+quando novo ponto é adicionado uma verificação foi colocada e foram atualizadas as msg tanto pro bando de dados como email
+1.1.0.0
+verificar os dois bancos de dados para que nas atualizações nao haja conflitos entre pontos(feito) #conflito por nomes
+//arrumar as funções do banco de dados (ta bravo)
+//criar setup (feito o model e banco de dados)
+botao para limpar a tela feito junto com o de adicionar 2
+//todos as linhas de divinopolis tem online,lafaiete
+foi colocado no sql nome tabela, cidades onde sera cadastrado os nomes das cidades
+criado a mensagem de inicio para escolher qual cidade deseja ser cadastrado
+o programa já receber outras cidades
+carregar marker por cidades feito
+facilitar o modo de como adicionar novos pontos adicinado
+melhorias nos design
+db fooi pro numero 14
+1.1.0.1
+banco de dados numero 18
+bugs mapa
+1.1.0.1
+Liberado as cidade para o lucas.
+erro pt concertado
+
+atualziado as dependencias
+1.1.0.2
+novos horarios atualizados entre outras coisas
+
+"1.1.0.4"
+atualizaçao do horario da presidente sjdr

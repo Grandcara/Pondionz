@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="white" type="color">#ffffff</item>
+    <item name="yellow" type="color">#fffbcf</item>
+    <item name="red" type="color">#ffc6c8</item>
+    <item name="green" type="color">#d6ffd5</item>
+    <item name="blue" type="color">#c9fbff</item>
+    <item name="pink" type="color">#e7cee4</item>
+    <item name="orange" type="color">#ffebda</item>
+    <item name="orangec" type="color">#f7ae6e</item>
+    <item name="roxo" type="color">#b6b6b9</item>
+    <item name="marrom" type="color">#b1a084</item>
+    <item name="marromb" type="color">#8c8271</item>
+    <item name="cinza" type="color">#6c6c6c</item>
+    <item name="maguenta" type="color">#f2a7f4</item>
+    <item name="maguentaa" type="color">#d3a9d4</item>
+
+
+    <item name="blue900" type="color">#1A237E</item>
+    <item name="blue800" type="color">#283593</item>
+    <item name="blue700" type="color">#303F9F</item>
+    <item name="blue600" type="color">#3949AB</item>
+    <item name="blue500" type="color">#3F51B5</item>
+    <item name="blue400" type="color">#5C6BC0</item>
+    <item name="blue300" type="color">#7986CB</item>
+    <item name="blue200" type="color">#9FA8DA</item>
+    <item name="blue100" type="color">#C5CAE9</item>
+    <item name="blue75" type="color">#dee1fc</item>
+    <item name="blue50" type="color">#E8EAF6</item>
+
+    <item name="green900" type="color">#1B5E20</item>
+    <item name="green800" type="color">#2E7D32</item>
+    <item name="green700" type="color">#388E3C</item>
+    <item name="green600" type="color">#43A047</item>
+    <item name="green500" type="color">#4CAF50</item>
+    <item name="green400" type="color">#66BB6A</item>
+    <item name="green300" type="color">#81C784</item>
+    <item name="green200" type="color">#A5D6A7</item>
+    <item name="green100" type="color">#C8E6C9</item>
+    <item name="green50" type="color">#E8F5E9</item>
+
+    <item name="red900" type="color">#B71C1C</item>
+    <item name="red800" type="color">#C62828</item>
+    <item name="red700" type="color">#D32F2F</item>
+    <item name="red600" type="color">#E53935</item>
+    <item name="red500" type="color">#F44336</item>
+    <item name="red400" type="color">#EF5350</item>
+    <item name="red300" type="color">#E57373</item>
+    <item name="red200" type="color">#EF9A9A</item>
+    <item name="red100" type="color">#FFCDD2</item>
+    <item name="red50" type="color">#FFEBEE</item>
+
+    <item name="purple900" type="color">#9C27B0</item>
+    <item name="blue50Transparente" type="color">#7ce8eaf6</item>
+    <item name="Transparente" type="color">#000000</item>
+
+</resources>

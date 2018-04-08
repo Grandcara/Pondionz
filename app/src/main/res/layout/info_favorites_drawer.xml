@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/blue50"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fav_favoritos_horarios"
+        android:id="@+id/textView"
+        android:layout_marginTop="16dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@android:color/primary_text_light" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="EM CONTRUÇÂO"
+        android:id="@+id/tvonibushorario"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/favmake_atencao"
+        android:id="@+id/textView2"
+        android:textStyle="bold"
+        android:layout_margin="10dp" />
+
+
+</LinearLayout>

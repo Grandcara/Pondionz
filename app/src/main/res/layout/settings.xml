@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue50">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Configurações"
+        android:id="@+id/textView20"
+        android:background="@color/blue500"
+        android:gravity="center"
+        android:textColor="@color/abc_primary_text_material_dark"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cidade padrão:"
+        android:id="@+id/textView19"
+        android:textSize="20sp"
+        android:textColor="@color/background_material_dark"
+        android:layout_margin="13dp" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvCidade"
+        android:layout_marginLeft="17dp"
+        android:textSize="15sp"
+        android:layout_marginRight="13dp"
+        android:layout_width="match_parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Versão:"
+        android:id="@+id/textView22"
+        android:layout_margin="13dp"
+        android:textSize="20sp"
+        android:textColor="@color/background_material_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.1.3.8"
+        android:id="@+id/textView23"
+        android:layout_marginLeft="17dp"
+        android:textSize="15sp"
+        android:layout_marginRight="13dp" />
+</LinearLayout>

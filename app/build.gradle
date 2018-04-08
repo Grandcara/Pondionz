@@ -1,0 +1,76 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+
+android {
+    signingConfigs {
+        config {
+            storeFile file('')
+            keyAlias ''
+            keyPassword ''
+            storePassword ''
+        }
+    }
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+    defaultConfig {
+        applicationId "br.com.pondionzi"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 61
+        versionName "1.1.3.9"
+        signingConfig signingConfigs.config
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    compile 'com.google.android.gms:play-services:11.8.0'
+    compile 'com.google.android.gms:play-services-maps:11.8.0'
+    compile 'com.google.android.gms:play-services-auth:11.8.0'
+    compile 'com.google.android.gms:play-services-gcm:11.8.0'
+    compile 'com.google.maps.android:android-maps-utils:0.4'
+    compile 'com.android.support:design:27.1.0'
+    compile 'org.codepond:wizardroid:1.3.1'
+    compile 'com.android.support:multidex:1.0.3'
+    compile 'com.google.firebase:firebase-crash:11.8.0'
+    compile 'com.google.firebase:firebase-messaging:11.8.0'
+    compile 'com.google.firebase:firebase-core:11.8.0'
+    compile('com.crashlytics.sdk.android:crashlytics:2.9.1@aar') {
+        transitive = true
+    }
+}
+// Add to the bottom of the file
+apply plugin: 'com.google.gms.google-services'

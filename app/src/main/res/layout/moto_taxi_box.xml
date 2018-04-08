@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/LinearLayoutCuston"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/newtext"
+        android:id="@+id/tvLinearCuston1"
+        android:textStyle="bold"
+        android:textColor="@color/blue50"
+        android:gravity="center"
+        android:background="@color/red500"
+        android:textSize="18sp"
+        android:padding="11dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/newtext"
+        android:id="@+id/tvLinearCuston2"
+        android:background="@color/red50"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:textColor="@android:color/primary_text_light"
+        android:autoText="false" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lin_cliqueinfor"
+        android:id="@+id/textView8"
+        android:background="@color/red50"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:gravity="right"
+        android:textStyle="bold|italic"
+        android:textColor="@android:color/primary_text_light" />
+</LinearLayout>
