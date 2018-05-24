@@ -13,7 +13,11 @@
 package br.com.pondionz.view;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.BitmapShader;
 import android.graphics.Color;
+import android.graphics.Shader;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -226,6 +230,8 @@ public class Horarios extends FragmentActivity {
                 //quando chegar no valor horizontal que cabe na tela ele pular pra proxima linha ate definir todos vertical
                 while (tamanhoHorizontal != tamanhoHorizontal2) {
                     TextView tv = new TextView(getContext());
+
+
                     tv.setPadding(8,1,8,1);
                     tv.setTextColor(Color.parseColor("#000000"));
                     tv.setLayoutParams(layoutParams2);
@@ -248,9 +254,13 @@ public class Horarios extends FragmentActivity {
                                     if (!hashInfoAdX.containsKey(listhorarios.get(total).getInfoAdicionaisX())) {
                                         hashInfoAdX.put(listhorarios.get(total).getInfoAdicionaisX(), tamanhohashX);
                                         tv.setBackgroundResource(colorHash.getColor(tamanhohashX));
+                                        tv.setText(String.valueOf(colorHash.getCaracter(tamanhohashX)+tv.getText().toString()));
+                                        tv.setTextSize(15);
                                         tamanhohashX++;
                                     } else {
                                         tv.setBackgroundResource(colorHash.getColor(hashInfoAdX.get(listhorarios.get(total).getInfoAdicionaisX())));
+                                        tv.setText(String.valueOf(colorHash.getCaracter(hashInfoAdX.get(listhorarios.get(total).getInfoAdicionaisX()))+tv.getText().toString()));
+                                        tv.setTextSize(15);
                                     }
                                     if (tv.getText().length() > 0)
                                         llHorizontal.addView(tv);
@@ -274,14 +284,18 @@ public class Horarios extends FragmentActivity {
                                         //  Log.i("Tamanho da hash", "hashcolor : " + tamanhohashY);
                                         hashInfoAdY.put(listhorarios.get(total).getInfoAdicionaisY(), tamanhohashY);
                                         tv.setBackgroundResource(colorHash.getColor(tamanhohashY));
+                                        tv.setText(String.valueOf(colorHash.getCaracter(tamanhohashY)+tv.getText().toString()));
+                                        tv.setTextSize(15);
                                         tamanhohashY++;
                                     } else {
                                         tv.setBackgroundResource(colorHash.getColor(hashInfoAdY.get(listhorarios.get(total).getInfoAdicionaisY())));
+                                        tv.setText(String.valueOf(colorHash.getCaracter(hashInfoAdY.get(listhorarios.get(total).getInfoAdicionaisY()))+tv.getText().toString()));
+                                        tv.setTextSize(15);
                                     }
                                     if (tv.getText().length() > 0)
                                         llHorizontal.addView(tv);
-                                    tamanhoHorizontal2++;
-                                    totalInfmacoesAdicionais++;
+                                        tamanhoHorizontal2++;
+                                        totalInfmacoesAdicionais++;
                                 }
                             }
                         }
@@ -324,7 +338,8 @@ public class Horarios extends FragmentActivity {
                     tv.setBackgroundResource(colorHash.getColor(i));
                     for (int j = 0; j < listhorarios.size(); j++) {
                         if (spinnerPosition == 0 && hashInfoAdX.containsKey(listhorarios.get(j).getInfoAdicionaisX())) {
-                            tv.setText(listhorarios.get(j).getInfoAdicionaisX());
+                            tv.setText(String.valueOf(colorHash.getCaracter(i)+" - "
+                                    +listhorarios.get(j).getInfoAdicionaisX()));
                             hashInfoAdX.remove(listhorarios.get(j).getInfoAdicionaisX());
                             break;
                         }
@@ -343,7 +358,8 @@ public class Horarios extends FragmentActivity {
                     tv.setBackgroundResource(colorHash.getColor(i));
                     for(int j = 0; j< listhorarios.size(); j++) {
                         if(hashInfoAdY.containsKey(listhorarios.get(j).getInfoAdicionaisY())) {
-                            tv.setText(listhorarios.get(j).getInfoAdicionaisY());
+                            tv.setText(String.valueOf(colorHash.getCaracter(i)+" - "
+                                    +listhorarios.get(j).getInfoAdicionaisY()));
                             hashInfoAdY.remove(listhorarios.get(j).getInfoAdicionaisY());
                             break;
                         }

@@ -25,22 +25,40 @@ import br.com.pondionz.R;
 public class ColorHash {
     private Hashtable<Integer, Integer> colorhash = new Hashtable<Integer, Integer>();
     public ColorHash() {
-        colorhash.put(0, R.drawable.bg_yellow);
-        colorhash.put(1, R.drawable.bg_blue);
-        colorhash.put(2, R.drawable.bg_red);
-        colorhash.put(3, R.drawable.bg_green);
-        colorhash.put(4, R.drawable.bg_pink);
-        colorhash.put(5, R.drawable.bg_orage);
-        colorhash.put(6, R.drawable.bg_marrom);
-        colorhash.put(7, R.drawable.bg_maguenta);
-        colorhash.put(8, R.drawable.bg_maguentaa);
-        colorhash.put(9, R.drawable.bg_marromb);
-        colorhash.put(10, R.drawable.bg_oragec);
+        colorhash.put(0, R.drawable.bg_yellow); //!
+        colorhash.put(1, R.drawable.bg_blue); //"
+        colorhash.put(2, R.drawable.bg_red); //#
+        colorhash.put(3, R.drawable.bg_green); //$
+        colorhash.put(4, R.drawable.bg_pink); //%
+        colorhash.put(5, R.drawable.bg_orage); //¨
+        colorhash.put(6, R.drawable.bg_marrom); //&
+        colorhash.put(7, R.drawable.bg_maguenta); //*
+        colorhash.put(8, R.drawable.bg_maguentaa); //(
+        colorhash.put(9, R.drawable.bg_marromb); //-
+        colorhash.put(10, R.drawable.bg_oragec); //)
     }
+
     public int getColor(int key){
         if(key > 10){
             return colorhash.get(10);
         }
         return colorhash.get(key);
+    }
+
+    public String getCaracter(int key){
+        switch (key){
+            case 0:  return "!";
+            case 1:  return "\"";
+            case 2:  return "#";
+            case 3:  return "$";
+            case 4:  return "%";
+            case 5:  return "¨";
+            case 6:  return "&";
+            case 7:  return "*";
+            case 8:  return "(";
+            case 9:  return "-";
+            case 10:  return ")";
+            default: return "";
+        }
     }
 }

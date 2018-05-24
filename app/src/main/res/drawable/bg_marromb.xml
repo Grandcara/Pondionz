@@ -15,7 +15,7 @@
     <solid android:color="@color/marromb" />
 
     <stroke
-        android:width="2dp"
+        android:width="0dp"
         android:color="@color/marrom" />
 
     <corners

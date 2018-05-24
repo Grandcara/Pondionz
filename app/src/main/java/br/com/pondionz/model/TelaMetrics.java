@@ -40,8 +40,6 @@ public class TelaMetrics {
             tamanhoHorizontal = 4;//ok
         }else if(metrics >= 240 && metrics < 320 && display_mode == Configuration.ORIENTATION_PORTRAIT){
                 tamanhoHorizontal = 4;//ok
-
-
         }else if(metrics > 2400 && display_mode == Configuration.ORIENTATION_LANDSCAPE){
             tamanhoHorizontal = 14;//ok
         }

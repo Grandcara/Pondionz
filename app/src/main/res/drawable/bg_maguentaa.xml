@@ -15,7 +15,7 @@
     <solid android:color="@color/maguentaa" />
 
     <stroke
-        android:width="2dp"
+        android:width="0dp"
         android:color="@color/blue75" />
 
     <corners

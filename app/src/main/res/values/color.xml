@@ -13,9 +13,8 @@
 
 <resources>
     <item name="white" type="color">#ffffff</item>
-    <item name="yellow" type="color">#fffbcf</item>
-    <item name="red" type="color">#ffc6c8</item>
-    <item name="green" type="color">#d6ffd5</item>
+    <item name="yellow100" type="color">#FFF9C4</item>
+
     <item name="blue" type="color">#c9fbff</item>
     <item name="pink" type="color">#e7cee4</item>
     <item name="orange" type="color">#ffebda</item>
@@ -61,6 +60,8 @@
     <item name="red200" type="color">#EF9A9A</item>
     <item name="red100" type="color">#FFCDD2</item>
     <item name="red50" type="color">#FFEBEE</item>
+
+    <item name="yellow900" type="color">#827717</item>
 
     <item name="purple900" type="color">#9C27B0</item>
     <item name="blue50Transparente" type="color">#7ce8eaf6</item>
