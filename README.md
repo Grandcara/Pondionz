@@ -1,3 +1,3 @@
 # Pondionz
 Use com responsabilidade.
-Toda ajuda minima é bem vinda!
+Toda ajuda mínima é bem vinda!
